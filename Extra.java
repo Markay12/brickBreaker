@@ -1,3 +1,4 @@
+/*
 import javax.swing.JFrame;
 
 public class BrickBreaker {
@@ -273,3 +274,4 @@ public class MapGenerator
 
     }
 }
+*/
