@@ -58,7 +58,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 
     // Text for the Score
     g.setColor(Color.white);
-    g.setFont(new Font("serif", Font.BOLD, 25));
+    g.setFont(new Font("serif", Font.BOLD, 50));
     g.drawString("" + score, 590, 30);
 
     //add background
@@ -83,7 +83,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 
     // check if the ball falls out of bounds
 
-    if(ballPositionY > 552){
+    if(ballPositionY > 562){
       play = false;
       ballXdirection = 0;
       ballYdirection = 0;
@@ -123,12 +123,15 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
       ballPositionY += ballYdirection;
       if(ballPositionX < 0){
         ballXdirection = -ballXdirection;
+        score++;
       }
       if(ballPositionY < 0){
         ballYdirection = -ballYdirection;
+        score++;
       }
       if(ballPositionX > 662){
         ballXdirection = -ballXdirection;
+        score++;
       }
     }
 
